@@ -180,7 +180,7 @@ header{
     height: 300px; /* 28.571rem */
 
 }
-
+/* Hebergements */
 .container {
     margin: 0 auto;
     max-width: 1440px; /*102.857rem*/
@@ -188,29 +188,32 @@ header{
 }
 #hebergements{
     display: flex;
+    flex-direction: row;
     height: auto;
     width: 100%;
 }
 .big_box_hebergements {
-    padding: 30px;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #f2f2f2;
+    height: auto;
+    width: 80%;
+}
+.box_titre_hebergements {
+    margin: 0 0 0 10px;
 }
 .box_hebergements {
-    width: auto;
-    height: auto;
-    padding: 1px;
+    width: 100%;
    
-  
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 .pack_vignette_first {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    
-    
-    
 }
 .pack_vignette_second {
     display: flex;
@@ -237,8 +240,10 @@ header{
 .box_vignette{
     background-color: #ffff;
     border-radius: 15px;
-    margin: 5px;
+    margin: 1rem;
     box-shadow:1px 1px 15px grey;
+    height: 13.3rem;
+    
 }
 .box_vignette_texte {
     
@@ -257,7 +262,7 @@ h2 {
    text-decoration: none;
    
 }
-.bloc_tps {
+.bloc_tps {             /* hebergement text prix stars */
     margin: 0 0 0 22px;
     display: flex;
     flex-direction: column;
@@ -274,25 +279,85 @@ h2 {
     color: #f2f2f2;
 }
 
+.box_afficher_plus {
+    margin: 0 0 0 10px;
 
+}
 
-
+ /* Les plus populaires */
 aside {
     padding: 30px;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #f2f2f2;
     margin-left: 25px;
 }
 .vignette_populaire {
-    width: 10%;
-    height: 10%;
-    margin: 2px;
+    width: 95%;
+    height: 95%;
+    margin: 5px 5px 5px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;    
+}
+#les_plus_populaires {
+    width:465px;
+}
+.box_les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    
+}
+.box_populaire_et_logo {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+}
+.box_populaire_vignette {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow:1px 1px 15px grey;
+    height: 11rem; 
+}
+.box_populaire_vignette_img {
+    width: 50%;
+    height: 100%;
+}
+.bloc_pop_tps {
+    height: 12rem;
+    width: 14rem;
+    margin: 5px 5px 10px 10px;
+}
+.box_populaire_vignettes_stars {
+    margin-top: 64px;
 }
 
-#activites {
+
+/* Activite */
+#activites { 
+    
     
     margin:0;
     overflow: hidden;
+}
+.box_photo_activite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#photo1 { /* img partie activite */
+    width: 100%;
+    height: 90%;
+}
+figure {
+    text-decoration: none;
+    width: 100%;
 }
 
 figcaption {
