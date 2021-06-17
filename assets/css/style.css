@@ -35,6 +35,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;   
+    font-weight: bolder;
 }
 #button_inscrire a {
     text-decoration: none;
@@ -86,7 +87,7 @@ border-radius: 15px 0px 0px 15px;
     height: 3.357rem;
     font-size: 1.5rem;
     padding: 9px;
-    font-weight: bold;
+    font-weight: bolder;
     border: none;
 }
 #loupe {
@@ -96,18 +97,19 @@ border-radius: 15px 0px 0px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 0;
     margin: 10px 0;
     font-size: 18px;
     flex-wrap: wrap;
+    width: 66%;
 }
 .titre_filtres{
-    width: 15%;
     display: flex;
     font-size: 1.286rem;
     justify-content: center;
-       
+    margin: 0 38px 0 0;
+    font-weight: bolder;   
 }
 
 .box_icon {
@@ -161,7 +163,7 @@ border-radius: 15px 0px 0px 15px;
     justify-content: flex-start;
 }
 .box_icon_info {
-    margin: 0.714rem;       /*10px*/
+    margin: 0.741rem 0.741rem 0.741rem 0;       /*10px*/
     width: 1.5rem;          /*21px*/
     border-radius: 50%;
     border: 2px solid #f2f2f2;
@@ -199,7 +201,8 @@ header{
     width: 80%;
 }
 .box_titre_hebergements {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 35px;
+
 }
 .box_hebergements {
     width: 100%;
@@ -280,7 +283,7 @@ h2 {
 }
 
 .box_afficher_plus {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 35px;
 
 }
 
