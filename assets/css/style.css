@@ -15,9 +15,6 @@ html,body {
     font-family: "raleway light";
 }
 
-
-
-
 #bloc_page{
     margin: 0 5% auto 5%;
     max-width: 1440px;
@@ -73,11 +70,11 @@ border-radius: 15px 0px 0px 15px;
 .button_rechercher {
     color: #f2f2f2; 
     font-size: 1.5rem;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-right-radius: 17%;
+    border-bottom-right-radius: 17%;
     background-color:#0065FC ;
     height: 3.357rem;
-    padding: 15px 15px;
+    padding: 12px 14px;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -98,6 +95,7 @@ border-radius: 15px 0px 0px 15px;
 #filtres {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     font-weight: bold;
     padding: 0;
     margin: 10px 0;
@@ -109,10 +107,7 @@ border-radius: 15px 0px 0px 15px;
     display: flex;
     font-size: 1.286rem;
     justify-content: center;
-    
-    
-    
-    
+       
 }
 
 .box_icon {
@@ -120,7 +115,7 @@ border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: flex-start;
     
-    border: black 1px solid;
+    border:#f2f2f2 3px solid;
     border-radius: 50px;
     height: 44px;
     
@@ -130,23 +125,25 @@ border-radius: 15px 0px 0px 15px;
 .icon_filtre {
     display: flex;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
+    height: 3rem;           
+    width: 3rem;        
     padding: 0;
     margin: 0;
-    border: 5px solid aqua;
     border-radius: 50%;
     border: 1px solid #DEEBFF;
     background-color: #DEEBFF;
 }
 .icon_filtre:hover{
-    color: #DEEBFF;
+    background-color: #f2f2f2;
 }
 .text_filtre {
     display: flex;
     padding: 0;
     margin: 1rem 0 1rem 0 ;
-    
+    padding: 0 1rem 0 1rem;    /*15px 15px */
+}
+.text_filtre:hover{
+    color:#DEEBFF;
 }
 .logofiltre {
     display: flex;
@@ -158,21 +155,135 @@ border-radius: 15px 0px 0px 15px;
     margin: 0;
     color: #0065FC;
 }
-
+.box_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.box_icon_info {
+    margin: 0.714rem;       /*10px*/
+    width: 1.5rem;          /*21px*/
+    border-radius: 50%;
+    border: 2px solid #f2f2f2;
+    color: #0065FC;
+    padding: 3px;
+}
+.info {
+    padding: 0.071rem 0.571rem; /* 1px , 8px */
+}
+.box_info_text {
+    padding: 0.214rem; /*3px*/
+    margin-left: 0;
+}
 header{
-    margin: 0 2% auto 2%;
-    height: 400px;
+    
+    height: 300px; /* 28.571rem */
 
 }
-
 
 .container {
     margin: 0 auto;
-    max-width: 1440px;
-    border-color: purple;
-    border-width: 10px;
+    max-width: 1440px; /*102.857rem*/
+    
+}
+#hebergements{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.big_box_hebergements {
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+}
+.box_hebergements {
+    width: auto;
+    height: auto;
+    padding: 1px;
+   
+  
+}
+.pack_vignette_first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    
+    
+    
+}
+.pack_vignette_second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+.box_vignette_img {
+    max-width: 235px;
+    height: 115px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+}
+.vignette {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    
+}
+.box_vignette{
+    background-color: #ffff;
+    border-radius: 50px;
+    margin: 5px;
+}
+.box_vignette_texte {
+    
 }
 
+h2 {
+    color:black;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin:0;
+}
+.box_vignette_texte p{
+   
+    margin: 0;
+   text-decoration: none;
+   
+}
+.bloc_tps {
+    margin:0 10px 0 10px;
+}
+.box_vignette_price p{
+    margin:0;
+
+}
+
+
+
+
+
+
+aside {
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    margin-left: 25px;
+}
+.vignette_populaire {
+    width: 10%;
+    height: 10%;
+    margin: 2px;
+}
+
+#activites {
+    
+    margin:0;
+    overflow: hidden;
+}
 
 figcaption {
     text-decoration: none;
@@ -183,3 +294,4 @@ footer {
     background-color: red;
 
 }
+
