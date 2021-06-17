@@ -228,15 +228,17 @@ header{
     margin: auto;
 }
 .vignette {
-    width: 100%;
+    width: 96%;
     height: auto;
-    padding: 2px;
-    
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .box_vignette{
     background-color: #ffff;
-    border-radius: 50px;
+    border-radius: 15px;
     margin: 5px;
+    box-shadow:1px 1px 15px grey;
 }
 .box_vignette_texte {
     
@@ -247,6 +249,7 @@ h2 {
     font-weight: bolder;
     font-size: 1.2rem;
     margin:0;
+    white-space: nowrap;    
 }
 .box_vignette_texte p{
    
@@ -255,14 +258,21 @@ h2 {
    
 }
 .bloc_tps {
-    margin:0 10px 0 10px;
+    margin: 0 0 0 22px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 .box_vignette_price p{
     margin:0;
 
 }
-
-
+.starbleue {
+    color: #0065FC;
+}
+.stargrise {
+    color: #f2f2f2;
+}
 
 
 
