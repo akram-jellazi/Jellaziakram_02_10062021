@@ -253,6 +253,10 @@ header{
     height: 13.3rem;
     
 }
+.box_vignette:hover {
+        transform: scale(1.05);
+        transition: 1s;
+}
 
 h2 {
     color:black;
@@ -332,6 +336,10 @@ aside {
     box-shadow:1px 1px 15px grey;
     height: 11rem; 
 }
+.box_populaire_vignette:hover {
+        transform: scale(1.05);
+        transition: 1s;
+}
 .box_populaire_vignette_img {
     width: 50%;
     height: 100%;
@@ -369,6 +377,15 @@ aside {
     justify-content: space-evenly;
     
 }
+.box_photo_one:hover,.box_photo_three:hover {
+        transform: scale(1.05);
+        transition: 1s;
+}
+#vignette2:hover,#vignette3:hover,#vignette5:hover,#vignette6:hover {
+    transform: scale(1.05);
+        transition: 1s;
+}
+
 .box_photo_one{
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -456,7 +473,7 @@ aside {
     box-shadow:1px 1px 15px grey;
 }
 #figcaption_speciale_1 {
-    height: 13%;
+    height: 21%;
     background-color: #f2f2f2;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -470,7 +487,7 @@ aside {
 }
 
 #figcaption_speciale_3 {
-    height: 13%;
+    height: 21%;
     background-color: #f2f2f2;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -528,7 +545,14 @@ footer {
 }
 .titre_footer {
     font-weight: bolder;
+    font-size: 20px;
     margin-bottom: 10px;
+}
+.lien_footer:hover {
+    color:#0065FC;
+    cursor: pointer;
+
+    
 }
                 /* initial screen = 1536px */
                 /* Iphone 6/7/8 = (375*667) */
@@ -643,8 +667,27 @@ footer {
 
 
 @media screen and (max-width: 667px) {
+    #bloc_page {
+        margin:0;
+    }
     header {                             /* Header */
         height: auto;
+        margin: 0 2% 0 2%;
+    }
+    .nav {                              /* NAV */
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    #button_inscrire {
+        grid-area: -3/-2/-2/-2;
+        justify-content: flex-end;
+        margin: 1rem 0rem 0rem -1rem;
+    }
+    .nav_button:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        font-weight: bold;
     }
 
     
@@ -667,14 +710,58 @@ footer {
     text-decoration: none;
     display: inline-block;
     }
+    #loupe:hover {
+        color: #DEEBFF;
+        background-color: white;
+        transform: scale(1.05);
+        transition: 1s;
+       
+    }
+    .titre_filtres {
+        margin: 0;
+        width: 100%;
+        justify-content: left;
+    }
+    #filtres {
+        display: flex;
+    font-weight: bolder;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
                                         /* Header */
+                                        /* section hebergement */
     #les_plus_populaires {
         width: auto;
+        border-radius: 0;
     }
     .big_box_hebergements {
         width:auto;
+        background-color: white;
     }
-
+                                        /*section hebergement */
+                                        /* activites */
+    .titre_activite {
+        margin-left: 2.4rem;
+    }
+    .box_photo_activite {
+        align-items: center;
+    }
+    .box_photo_one,.box_photo_two,.box_photo_three,.box_photo_four {
+        height: auto;
+        width: 22rem;
+        border-radius: 2rem;
+        margin-bottom: 20px;
+    }
+    #vignette2,#vignette5 {
+        margin-bottom: 20px;       
+    }
+                                        /* activites */
 
 
     .footer {                       /* footer */
