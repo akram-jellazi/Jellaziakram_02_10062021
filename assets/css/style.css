@@ -631,11 +631,7 @@ footer {
         height: 44rem;
         width: 33rem;
     }
-    .photo {
-       
-        object-position: none;
-        
-    }
+    
     .figcaption {
         height: 4rem;
     }
