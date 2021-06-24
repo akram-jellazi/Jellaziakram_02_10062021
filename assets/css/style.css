@@ -553,6 +553,13 @@ footer {
     background-color: #f2f2f2;
 
 }
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 .bloc_footer {
     display: flex;
     flex-direction: column;
@@ -684,6 +691,10 @@ footer {
         display:block;
         
         height: 17rem;
+    }
+    .foot {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .bloc_footer {
         margin-right: 0;
