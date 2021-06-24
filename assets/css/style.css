@@ -206,7 +206,7 @@ header{
     width: 80%;
 }
 .box_titre_hebergements {
-    margin: 0 0 0 35px;
+    margin: 1rem 0 0 35px;
 
 }
 .box_hebergements {
@@ -216,6 +216,9 @@ header{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+}
+.box_hebergements > a {
+    text-decoration: none;
 }
 .pack_vignette_first {
     display: flex;
@@ -261,9 +264,16 @@ header{
 h2 {
     color:black;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin:0;
     white-space: nowrap;    
+}
+.titre_hbg {
+    color:black;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin:0;
+    white-space: nowrap;  
 }
 .box_vignette_texte p{
    
@@ -276,6 +286,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    color:black;
 }
 .box_vignette_price p{
     margin:0;
@@ -340,6 +351,10 @@ aside {
         transform: scale(1.05);
         transition: 1s;
 }
+.vignettes_populaire > a {
+    text-decoration: none;
+    color: inherit;
+}
 .box_populaire_vignette_img {
     width: 50%;
     height: 100%;
@@ -348,6 +363,7 @@ aside {
     height: 12rem;
     width: 14rem;
     margin: 5px 5px 10px 10px;
+    
 }
 .box_populaire_vignettes_stars {
     margin-top: 64px;
@@ -355,7 +371,8 @@ aside {
 .titre_pop {
     font-weight: bolder;
     margin: 1rem 0 1rem 0;
-    white-space: wrap; 
+    height: 36px;
+    font-size: 1.2rem;
 }
 
 
@@ -389,7 +406,7 @@ aside {
 .box_photo_one{
     background-color: #f2f2f2;
     border-radius: 15px;
-    margin: 1% 2% 0.5% 2%;
+    margin: 1% 2% 0.5% 0;
     box-shadow: 1px 1px 15px grey;
 }
 .box_photo_two {
@@ -400,13 +417,16 @@ aside {
     text-decoration: none;
 }
 .box_photo_two > a {
-    text-decoration: none;    
+    text-decoration: none; 
+    color: inherit;   
 }
 .box_photo_three > a {
     text-decoration: none;
+    color: inherit;
 }
 .box_photo_four > a {
     text-decoration: none;
+    color: inherit;
 }                               /* fin supp */    
 .box_photo_three {
     background-color: #f2f2f2;
@@ -564,6 +584,7 @@ footer {
     }
     .big_box_hebergements {             /*ranger en 1 seul colonne */
         width: 76%;
+        margin: auto;
     }
     .container {                        /* on peut voir barre d'info*/
 
@@ -571,19 +592,24 @@ footer {
     }
     
     #les_plus_populaires {      /* aside */
-        margin-left: 0;
+        margin: auto;
     }
     .box_populaire_vignette {   /* arrangement pour les images */
         justify-content: normal;
     }                               
                                     /* Debut activites */
+    .titre_activite {
+        margin: 5% 0 2% 16%;
+    }
+
     .box_photo_activite {                /* colonne */    
         flex-direction:column;
-        align-items: left;
+        align-items: center;
     }
     .box_photo_one {
         height: 26rem;
         width: 33rem;
+        margin-left: 2%;
     }
     .box_photo_two {
         width: 33rem;
@@ -751,6 +777,9 @@ footer {
     }
     .box_photo_activite {
         align-items: center;
+    }
+    .box_photo_one {
+        margin-left: 2%;
     }
     .box_photo_one,.box_photo_two,.box_photo_three,.box_photo_four {
         height: auto;
