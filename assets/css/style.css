@@ -58,31 +58,39 @@ h1 {
 }
 .section_recherche {
     display: flex;
-    height: 13.5%;
+    flex-direction: row;
     width: 100%;
+    margin-bottom: 1rem;
 }
-
-.logor {
+.box_logor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #f2f2f2;
-    font-size: 1.5rem;
-    padding: 13px;
+    height: 3rem;
+    padding: 0 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.logor {
+    font-size: 1.2rem;
     text-align: center;
     border-radius: 15px 0px 0px 15px;
 }
 .button_rechercher {
     color: #f2f2f2; 
-    font-size: 1.5rem;
-    border-top-right-radius: 17%;
-    border-bottom-right-radius: 17%;
+    font-size: 1.2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     background-color:#0065FC ;
-    height: 3.357rem;
+    height: 3rem;
     padding: 12px 14px;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor:pointer;
-
+    font-weight: bold;
 }
 .button_rechercher:hover{
     color: #0065FC;
@@ -90,8 +98,8 @@ h1 {
 
 }
 #rechercher{
-    height: 3.357rem;
-    font-size: 1.5rem;
+    height: 3rem;
+    font-size: 1.2rem;
     padding: 9px;
     font-weight: bolder;
     border: none;
@@ -102,13 +110,11 @@ h1 {
 #filtres {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     font-weight: bolder;
     padding: 0;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 1rem;
     flex-wrap: wrap;
-    width: 66%;
     font-family: "raleway";
 }
 .titre_filtres{
@@ -120,14 +126,11 @@ h1 {
 }
 
 .box_icon {
-    
     display: flex;
     justify-content: flex-start;
-    
     border:#f2f2f2 3px solid;
     border-radius: 50px;
     height: 44px;
-    
 }
 
 
@@ -214,7 +217,7 @@ header{
     width: 100%;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   margin-left: 2rem;
 }
 .box_hebergements > a {
     text-decoration: none;
@@ -250,7 +253,7 @@ header{
     background-color: #ffff;
     border-radius: 15px;
     margin: 1rem;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
     height: 13.3rem;
     
 }
@@ -345,7 +348,7 @@ aside {
     background-color: #ffff;
     border-radius: 15px;
     margin: 10px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
     height: 11rem; 
 }
 .box_populaire_vignette:hover {
@@ -408,7 +411,7 @@ aside {
     background-color: #f2f2f2;
     border-radius: 15px;
     margin: 1% 2% 0.5% 0;
-    box-shadow: 1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 .box_photo_two {
     
@@ -433,7 +436,7 @@ aside {
     background-color: #f2f2f2;
     border-radius: 15px;
     margin: 1% 2% 0.5% 2%;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 .box_photo_four {
     margin: 1% 2% 1% 2%;
@@ -463,7 +466,7 @@ aside {
     height: 45%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 #vignette3 {
     margin: 8% 0 0 0;
@@ -471,7 +474,7 @@ aside {
     width: 100%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 #vignette4 {
     height: 100%;
@@ -483,7 +486,7 @@ aside {
     height: 45%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 #vignette6 {
     margin: 8% 0 0 0;
@@ -491,7 +494,7 @@ aside {
     width: 100%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 #figcaption_speciale_1 {
     height: 21%;
@@ -504,7 +507,7 @@ aside {
     background-color: #f2f2f2;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 
 #figcaption_speciale_3 {
@@ -518,7 +521,7 @@ aside {
     background-color: #f2f2f2;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    box-shadow:1px 1px 15px grey;
+    box-shadow:1px 1px 5px grey;
 }
 .figcaption {
     text-decoration: none;
@@ -593,16 +596,21 @@ footer {
         flex-direction: column-reverse;  /* aside passe devant big box */
     }
     .big_box_hebergements {             /*ranger en 1 seul colonne */
-        width: 76%;
+        width: auto;
         margin: auto;
     }
     .container {                        /* on peut voir barre d'info*/
 
-        margin: 5% auto auto auto;
+        margin: 8% auto auto auto;
+    }
+    .box_hebergements {
+        justify-content: center;
+        margin: 0;
     }
     
     #les_plus_populaires {      /* aside */
         margin: auto;
+        width: auto;
     }
     .box_populaire_vignette {   /* arrangement pour les images */
         justify-content: normal;
@@ -772,9 +780,17 @@ footer {
 
                                         /* Header */
                                         /* section hebergement */
+    .box_hebergements {
+        justify-content: center;
+        margin: 0;
+    }
+    .box_vignette_img {
+        max-width: none;
+    }                                    
     #les_plus_populaires {
         width: auto;
         border-radius: 0;
+        padding: 5px;
     }
     .big_box_hebergements {
         width:auto;
@@ -793,7 +809,7 @@ footer {
     }
     .box_photo_one,.box_photo_two,.box_photo_three,.box_photo_four {
         height: auto;
-        width: 22rem;
+        width: 25rem;
         border-radius: 2rem;
         margin-bottom: 20px;
     }
