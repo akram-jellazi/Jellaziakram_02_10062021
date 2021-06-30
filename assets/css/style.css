@@ -131,6 +131,7 @@ h1 {
     border:#f2f2f2 3px solid;
     border-radius: 50px;
     height: 44px;
+    margin-right: 0.5rem;
 }
 
 
@@ -203,12 +204,16 @@ header{
     flex-direction: row;
     height: auto;
     width: 100%;
+    justify-content: space-between;
+
 }
 .big_box_hebergements {
     border-radius: 30px;
     background-color: #f2f2f2;
     height: auto;
-    width: 80%;
+    width: 67%;
+    max-width: 915px;
+    min-width: 900px;
 }
 .box_titre_hebergements {
     margin: 1rem 0 0 35px;
@@ -235,7 +240,7 @@ header{
     align-content: center;
 }
 .box_vignette_img {
-    max-width: 235px;
+    max-width: 254px;
     height: 115px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
@@ -327,7 +332,8 @@ aside {
     object-fit: cover;    
 }
 #les_plus_populaires {
-    width:465px;
+    width: 25%;
+    margin-left: 3rem;
 }
 .box_les_plus_populaires {
     display: flex;
@@ -553,22 +559,23 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 7rem;
     background-color: #f2f2f2;
-    
+    padding: 2% 5% 2% 5%;
 }
 .foot {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-left: 6rem;
+    
+   
     
 }
 .bloc_footer {
     display: flex;
     flex-direction: column;
-    margin-right: 21.286rem;
+    margin-right: 10.286rem;
+    min-width: 19rem;
 }
 
 .texte_footer {
@@ -598,6 +605,7 @@ footer {
     .big_box_hebergements {             /*ranger en 1 seul colonne */
         width: auto;
         margin: auto;
+        min-width: 0;
     }
     .container {                        /* on peut voir barre d'info*/
 
