@@ -50,6 +50,9 @@ nav {
     border-top: 3px solid #0065FC;
     font-weight: bold;
 }
+#button_inscrire {
+    border-top: none;
+}
 
 h1 {
     font-size: 1.5rem;
@@ -728,6 +731,10 @@ footer {
      grid-area: -3/-2/-2/-2;
      justify-content: flex-end;
      margin: 1rem 0rem 0rem -1rem;
+     border: none;
+    }
+    .nav_button {
+        border-bottom: 3px solid #f2f2f2;
     }
     .nav_button:hover {
      color: #0065FC;
