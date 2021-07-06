@@ -454,6 +454,7 @@ aside {
 }
 #photo2 {
     height: 138px;
+    object-position: center;
 }
 #photo5 {
     height: 138px;
